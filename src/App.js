@@ -4,6 +4,7 @@ import Brands from './components/Brands'
 import Navbar from './components/Navbar'
 import Pagination from './components/Pagination'
 import InputPageItens from './components/InputPageItens'
+import Footer from './components/Footer'
 
 function App() {
   const [itens, setItens] = useState([])
@@ -42,6 +43,7 @@ function App() {
         <InputPageItens itensPerPage={itensPerPage} setItensPerPage={setItensPerPage} />
         <Brands itens={currentItens} loading={loading} />
         <Pagination itensPerPage={itensPerPage} totalItens={itens.length} paginate={paginate}  />
+        <Footer />
       </div>
     </>
   )

@@ -8,8 +8,14 @@ const InputPageItens = ({ itensPerPage, setItensPerPage }) => {
                 <div className="input-group-prepend">
                     <span className="input-group-text" id="basic-addon3">Itens Per Page: </span>
                 </div>
-                {/* <input type="text" className="form-control" id="basic-url" aria-describedby="basic-addon3" /> */}
-                <input type="number" className="form-control" value={itensPerPage} onChange={(e) => setItensPerPage(e.target.value)} />
+
+                <input
+                    type="number"
+                    className="form-control"
+                    value={itensPerPage} 
+                    min="5"
+                    onChange={(e) => setItensPerPage(e.target.value)}
+                />
             </div>
         </>
     )
