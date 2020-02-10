@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import api from './services/api'
+import Carros from './components/Carros'
 
 function App() {
+  const [itens, setItens] = useState([])
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await api.get('')
+      setItens(res.data)
+    }
+    fetchData() 
+    
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className="main">
+        <h1>React Fipe Api Pagination</h1>
+        <Carros carros={itens} />
+      </div>
+    </>
+  )
 }
 
 export default App;
