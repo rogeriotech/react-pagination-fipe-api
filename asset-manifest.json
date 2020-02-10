@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "http//lrdrodrigues.github.io/react-pagination-fipe-api/static/js/main.5d50f475.chunk.js",
-    "main.js.map": "http//lrdrodrigues.github.io/react-pagination-fipe-api/static/js/main.5d50f475.chunk.js.map",
-    "runtime-main.js": "http//lrdrodrigues.github.io/react-pagination-fipe-api/static/js/runtime-main.ed2fb7ba.js",
-    "runtime-main.js.map": "http//lrdrodrigues.github.io/react-pagination-fipe-api/static/js/runtime-main.ed2fb7ba.js.map",
-    "static/js/2.9b62cb74.chunk.js": "http//lrdrodrigues.github.io/react-pagination-fipe-api/static/js/2.9b62cb74.chunk.js",
-    "static/js/2.9b62cb74.chunk.js.map": "http//lrdrodrigues.github.io/react-pagination-fipe-api/static/js/2.9b62cb74.chunk.js.map",
-    "index.html": "http//lrdrodrigues.github.io/react-pagination-fipe-api/index.html",
-    "precache-manifest.8b6259f732728b49286c02da9b24e5f1.js": "http//lrdrodrigues.github.io/react-pagination-fipe-api/precache-manifest.8b6259f732728b49286c02da9b24e5f1.js",
-    "service-worker.js": "http//lrdrodrigues.github.io/react-pagination-fipe-api/service-worker.js",
-    "static/js/2.9b62cb74.chunk.js.LICENSE.txt": "http//lrdrodrigues.github.io/react-pagination-fipe-api/static/js/2.9b62cb74.chunk.js.LICENSE.txt"
+    "main.js": "./static/js/main.65ca7463.chunk.js",
+    "main.js.map": "./static/js/main.65ca7463.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.2a69fea3.js",
+    "runtime-main.js.map": "./static/js/runtime-main.2a69fea3.js.map",
+    "static/js/2.9b62cb74.chunk.js": "./static/js/2.9b62cb74.chunk.js",
+    "static/js/2.9b62cb74.chunk.js.map": "./static/js/2.9b62cb74.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.edd8822b0e07d69fc9e54e8ea35d5371.js": "./precache-manifest.edd8822b0e07d69fc9e54e8ea35d5371.js",
+    "service-worker.js": "./service-worker.js",
+    "static/js/2.9b62cb74.chunk.js.LICENSE.txt": "./static/js/2.9b62cb74.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ed2fb7ba.js",
+    "static/js/runtime-main.2a69fea3.js",
     "static/js/2.9b62cb74.chunk.js",
-    "static/js/main.5d50f475.chunk.js"
+    "static/js/main.65ca7463.chunk.js"
   ]
 }
