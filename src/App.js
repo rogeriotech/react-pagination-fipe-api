@@ -3,6 +3,7 @@ import api from './services/api'
 import Brands from './components/Brands'
 import Navbar from './components/Navbar'
 import Pagination from './components/Pagination'
+import InputPageItens from './components/InputPageItens'
 
 function App() {
   const [itens, setItens] = useState([])
@@ -23,7 +24,7 @@ function App() {
   }, [])
 
   //Calculations 
-  const indexOfLastItem = currentPage * itensPerPage
+  const indexOfLastItem = currentPage * itensPerPage 
   const indexOfFirstItem = indexOfLastItem - itensPerPage 
   const currentItens = itens.slice(indexOfFirstItem, indexOfLastItem)
 
@@ -31,13 +32,16 @@ function App() {
     setCurrentPage(number)
   }
 
+  console.log('itens', itens)
+
   return (
     <>
-      <div className="main">
+      <div className="main container">
         <Navbar />
-        <h1>React Fipe Api Pagination</h1>
+        <h1>React Fipe Api Pagination</h1> 
+        <InputPageItens itensPerPage={itensPerPage} setItensPerPage={setItensPerPage} />
         <Brands itens={currentItens} loading={loading} />
-        <Pagination paginate={paginate} itensPerPage={itensPerPage} totalItens={itens.length} />
+        <Pagination itensPerPage={itensPerPage} totalItens={itens.length} paginate={paginate}  />
       </div>
     </>
   )

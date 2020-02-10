@@ -4,9 +4,11 @@ import React from 'react'
 const Pagination = ({ itensPerPage, totalItens, paginate }) => {
     const itemNumbers = []
 
-    for (let i = 1; i < Math.ceil(totalItens / itensPerPage); i++) {
+    let i
+    for ( i = 1; i < Math.ceil(totalItens / itensPerPage) + 1; i++) {
         itemNumbers.push(i)
     }
+    
 
     return (
         <>

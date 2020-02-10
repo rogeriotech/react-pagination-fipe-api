@@ -17,7 +17,7 @@ const Brands = ({ itens, loading }) => {
             <ul className="list-group mt-5">
                 {itens.map((item) => (
                     <a href="#" key={item.id} className="list-group-item">
-                        {item.fipe_name}
+                        {item.id} - {item.fipe_name}
                     </a>
                 ))}
             </ul>
